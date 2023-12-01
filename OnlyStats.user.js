@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        OnlyStats
-// @version     2023.11.30
+// @version     2023.12.01
 // @author      mod by 6ixtrojans
 // @description OnlyStats: nothing but stats that stay in your browser.
 // @match       https://*.alliances.commandandconquer.com/*/index.aspx*
@@ -21,7 +21,7 @@
                     phe = webfrontend.phe;
                 }2
                 var scriptVersionLocal = '2023.11.30';
-                qx.Class.define('OnlyStats',
+                qx.Class.define('  OnlyStats  ',
                 {
                     type: 'singleton',
                     extend: qx.core.Object,
