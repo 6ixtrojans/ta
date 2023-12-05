@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        OnlyStats
-// @version     2023.12.01
+// @version     2023.12.05
 // @author      mod by 6ixtrojans
 // @description OnlyStats: nothing but stats that stay in your browser.
 // @match       https://*.alliances.commandandconquer.com/*/index.aspx*
@@ -21,7 +21,7 @@
                     phe = webfrontend.phe;
                 }2
                 var scriptVersionLocal = '2023.11.30';
-                qx.Class.define('  OnlyStats  ',
+                qx.Class.define('OnlyStats',
                 {
                     type: 'singleton',
                     extend: qx.core.Object,
@@ -40,7 +40,7 @@
                             this.timeoutArrayReportDataManager = [];
                             this.ReportsAreLoading = false;
                             this.app = qx.core.Init.getApplication();
-                            this.GuiButtonLeoStats = new qx.ui.form.Button('OnlyStats').set(
+                            this.GuiButtonLeoStats = new qx.ui.form.Button('  OnlyStats  ').set(
                             {
                                 center: true,
                                 rich: true
