@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        OnlyStats
-// @version     2023.12.13
+// @version     2023.12.13.1
 // @author      mod by 6ixtrojans
 // @description OnlyStats: nothing but stats that stay in your browser.
 // @downloadURL https://github.com/6ixtrojans/ta/raw/main/OnlyStats.user.js
@@ -22,7 +22,7 @@
                 {
                     phe = webfrontend.phe;
                 }2
-                var scriptVersionLocal = '2023.11.30';
+                var scriptVersionLocal = '2023.12.13.1';
                 qx.Class.define('OnlyStats',
                 {
                     type: 'singleton',
@@ -42,9 +42,11 @@
                             this.timeoutArrayReportDataManager = [];
                             this.ReportsAreLoading = false;
                             this.app = qx.core.Init.getApplication();
-                            this.GuiButtonLeoStats = new qx.ui.form.Button('  OnlyStats  ').set(
+                            this.GuiButtonOnlyStats = new qx.ui.form.Button('OnlyStats').set(
                             {
                                 center: true,
+                                paddingRight: 20,
+                                paddingLeft: 20,
                                 rich: true
                             });
                             this.setCncOptVars();
@@ -178,7 +180,7 @@
                             this.GuiUpgradeSpecialBasePage.add(this.GuiUpgradeSpecialBaseVBox);
 
                             // Button
-                            this.GuiButtonLeoStats.addListener('click', function()
+                            this.GuiButtonOnlyStats.addListener('click', function()
                             {
                                 // qx.core.Init.getApplication().showExternal(linkToRoot);
                                 this.GuiInfoVBox.removeAll();
@@ -197,7 +199,7 @@
                             }, this);
 
                             // set Button to position
-                            this.app.getDesktop().add(this.GuiButtonLeoStats,
+                            this.app.getDesktop().add(this.GuiButtonOnlyStats,
                             {
                                 right: 125,
                                 top: 0
