@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name        OnlyStats
-// @version     2023.12.05
+// @version     2023.12.13
 // @author      mod by 6ixtrojans
 // @description OnlyStats: nothing but stats that stay in your browser.
+// @downloadURL https://github.com/6ixtrojans/ta/raw/main/OnlyStats.user.js
+// @updateURL   https://github.com/6ixtrojans/ta/raw/main/OnlyStats.user.js
 // @match       https://*.alliances.commandandconquer.com/*/index.aspx*
 // @require		https://code.jquery.com/jquery-3.3.1.min.js
 // @grant       none
